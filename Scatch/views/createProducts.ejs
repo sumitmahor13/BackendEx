@@ -1,0 +1,39 @@
+<!-- <%- include("./partial/header") %> -->
+
+<div>
+  <div>
+    <div>
+      <div>
+        <a href="">All Products</a>
+        <a href="">Create products</a>
+      </div>
+    </div>
+    <main>
+      <h2>Create New Products</h2>
+      <form action="/owners/products/create" method="post" enctype="multipart/form-data">
+        <div>
+          <h3>Products Deatils</h3>
+          <div>
+            <label>Product Image</label>
+            <input name="image" type="file" value="Select File" />
+          </div>
+          <div>
+            <input name="name" type="text" placeholder="Product Name" />
+            <input name="price" type="text" placeholder="Product Price" />
+            <input name="discount" type="text" placeholder="Discount" />
+          </div>
+          <div>
+            <h3>Panel Details</h3>
+            <div>
+              <input name="bg-color" type="text" placeholder="Background Color" />
+              <input name="panel-color" type="text" placeholder="Panel Color" />
+              <input name="text-color" type="text" placeholder="Text Color" />
+            </div>
+          </div>
+          <input type="submit" value="Create New Product"/>
+        </div>
+      </form>
+    </main>
+  </div>
+</div>
+<!-- <%- include('./partial/footer') %> -->

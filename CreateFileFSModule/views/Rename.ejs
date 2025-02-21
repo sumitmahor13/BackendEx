@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-900 w-10/12 mt-5 mx-auto">
+    <a href="/" class="text-blue-600">Back to home</a>
+    <div class="flex flex-wrap gap-5">
+        <div class="mt-10 text-white w-10/12 mx-auto rounded-lg p-3">
+            <form class="w-[50%] mx-auto pb-5" action="/rename" method="post">
+                <input type="text" value="<%=filename%>" name="old" placeholder="Old Name" class="bg-gray-800 w-full mb-2 block text-gray-400 outline-none rounded-lg p-2">
+                <input type="text" name="new" placeholder="New Name" class="bg-gray-800 w-full mb-2 block text-white outline-none rounded-lg p-2">
+                <button type="submit" value="rename" class="bg-yellow-600 mx-auto mb-2 block px-5 py-2 text-white rounded-lg">Rename</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
